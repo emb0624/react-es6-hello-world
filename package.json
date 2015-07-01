@@ -1,0 +1,22 @@
+{
+  "name": "react-es6-hello-world",
+  "version": "1.0.0",
+  "description": "Hello World on ReactJS and new ES6",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:emb0624/react_es6_hello_world.git"
+  },
+  "author": "emb0624",
+  "bugs": {
+    "url": "https://github.com/emb0624/react_es6_hello_world/issues"
+  },
+  "homepage": "https://github.com/emb0624/react_es6_hello_world",
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "react": "^0.13.3",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {}
+}
