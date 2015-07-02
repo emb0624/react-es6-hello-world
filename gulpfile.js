@@ -1,18 +1,17 @@
-var gulp = require('gulp');
-var browserify = require('browserify');
-var babelify = require('babelify');
-var source = require('vinyl-source-stream');
- 
-gulp.task('build', function () {
-  browserify({
-    entries: 'index.jsx',
-    extensions: ['.jsx'],
-    debug: true
-  })
-  .transform(babelify)
-  .bundle()
-  .pipe(source('bundle.js'))
-  .pipe(gulp.dest('dist'));
-});
- 
-gulp.task('default', ['build']);
+/*
+  gulpfile.js
+  ===========
+  Rather than manage one giant configuration file responsible
+  for creating multiple tasks, each task has been broken out into
+  its own file in gulp/tasks. Any files in that directory get
+  automatically required below.
+
+  To add a new task, simply add a new task file that directory.
+  gulp/tasks/default.js specifies the default set of tasks to run
+  when you run `gulp`.
+*/
+
+var requireDir = require('require-dir');
+
+// Require all tasks in gulp/tasks, including sub-folders
+requireDir('./gulp/tasks', { recurse: true });
