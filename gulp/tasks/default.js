@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('default', ['sass', 'eslint', 'images', 'jade', 'pubfiles', 'watch','jsonServer']);
+gulp.task('default', ['clean', 'eslint', 'jade', 'watch']);

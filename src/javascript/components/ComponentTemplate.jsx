@@ -27,7 +27,7 @@ ExampleComponent.propTypes = {
   name: React.PropTypes.string
 };
 ExampleComponent.defaultProps = {
-  name: 'Headspringer'
+  name: 'Test'
 };
 
 module.exports = ExampleComponent;
